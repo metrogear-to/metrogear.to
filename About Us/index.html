@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Metro Gear Toronto - About Us</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<section>
+		<div class="circle"></div>
+		<header>
+			<a href="#"><img src="societythrift.jpg" class="logo"></a>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Shop</a></li>
+				<li><a href="#">Consignment</a></li>
+				<li><a href="#">Sale</a></li>
+				<li><a href="#">About Us</a></li>
+			</ul>
+		</header>
+		<div class="content">
+			<div class="textBox">
+				<h2>We Are<br>METRO GEAR <span>Toronto</span></h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+				<a href="#">Contact Us!</a>
+			</div>
+			<div class="imgBox">
+				<img src="bredtoe.png" class="metrogear">
+			</div>
+		</div>
+		<ul class="thumb">
+			<li><img src="bredtoetn.png" onclick="imgSlider('bredtoe.png');changeCircleColor('#bf9494')"></li>
+			<li><img src="bred4tn.png" onclick="imgSlider('bred4.png');changeCircleColor('#808080')"></li>
+			<li><img src="unc6tn.png" onclick="imgSlider('unc6.png');changeCircleColor('#4B9CD3')"></li>
+		</ul>
+		<ul class="sci">
+			<li><a href="#"><img src="instagram.png"></a></li>
+		</ul>
+	</section>
+
+	<script type="text/javascript">
+		function imgSlider(anything){
+			document.querySelector('.metrogear').src = anything;
+		}
+
+		function changeCircleColor(color){
+			const circle = document.querySelector('.circle');
+			circle.style.background = color;
+		}
+	</script>
+</body>
+</html>
