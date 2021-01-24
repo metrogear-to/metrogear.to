@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Metro Gear Toronto - About Us</title>
 	<link rel="stylesheet" href="style.css">
 </head>
@@ -9,8 +10,9 @@
 	<section>
 		<div class="circle"></div>
 		<header>
-			<a href="#"><img src="societythrift.jpg" class="logo"></a>
-			<ul>
+			<a href="#"><img src="pictures/societythrift.jpg" class="logo"></a>
+			<div class="toggle" onclick="toggleMenu();"></div>
+			<ul class="navigation">
 				<li><a href="#">Home</a></li>
 				<li><a href="#">Shop</a></li>
 				<li><a href="#">Consignment</a></li>
@@ -25,16 +27,16 @@
 				<a href="#">Contact Us!</a>
 			</div>
 			<div class="imgBox">
-				<img src="bredtoe.png" class="metrogear">
+				<img src="pictures/bredtoe.png" class="metrogear">
 			</div>
 		</div>
 		<ul class="thumb">
-			<li><img src="bredtoetn.png" onclick="imgSlider('bredtoe.png');changeCircleColor('#bf9494')"></li>
-			<li><img src="bred4tn.png" onclick="imgSlider('bred4.png');changeCircleColor('#808080')"></li>
-			<li><img src="unc6tn.png" onclick="imgSlider('unc6.png');changeCircleColor('#4B9CD3')"></li>
+			<li><img src="pictures/bredtoetn.png" onclick="imgSlider('pictures/bredtoe.png');changeCircleColor('#bf9494')"></li>
+			<li><img src="pictures/bred4tn.png" onclick="imgSlider('pictures/bred4.png');changeCircleColor('#808080')"></li>
+			<li><img src="pictures/unc6tn.png" onclick="imgSlider('pictures/unc6.png');changeCircleColor('#4B9CD3')"></li>
 		</ul>
 		<ul class="sci">
-			<li><a href="#"><img src="instagram.png"></a></li>
+			<li><a href="https://www.instagram.com/metrogear.to/"><img src="pictures/instagram.png"></a></li>
 		</ul>
 	</section>
 
@@ -46,6 +48,13 @@
 		function changeCircleColor(color){
 			const circle = document.querySelector('.circle');
 			circle.style.background = color;
+		}
+
+		function toggleMenu(){
+			var menuToggle = document.querySelector('.toggle');
+			var navigation = document.querySelector('.navigation')
+			menuToggle.classList.toggle('active')
+			navigation.classList.toggle('active')
 		}
 	</script>
 </body>
