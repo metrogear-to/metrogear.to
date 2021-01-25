@@ -43,6 +43,7 @@ header ul li
 }
 header ul li a
 {
+	font-family: Monaco;
 	display: inline-block;
 	color: #333;
 	font-weight: 600;
@@ -200,7 +201,7 @@ header ul li a
 	}
 	header ul.navigation.active
 	{
-		font-family: courier;
+		font-family: Monaco;
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -243,20 +244,21 @@ header ul li a
 	}
 	.content .imgBox img
 	{
-		max-width: 250px;
+		max-width: 400px;
+		padding-bottom: 100px;
 	}
 	.thumb li img
 	{
-		max-width: 40px;
+		max-width: 80px;
 	}
 	.circle
 	{
-		clip-path: circle(400px at center bottom);
+		clip-path: circle(500px at center bottom);
 	}
 	.sci
 	{
 		background: #bf9494;
-		right: 0;
+		right: 50px;
 		width: 50px;
 		border-top-left-radius: 5px;
 		border-bottom-left-radius: 5px;
