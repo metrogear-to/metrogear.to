@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+    <title>MetroGear.TO</title>
+    <link rel="stylesheet" href="../css/stylesConsignment.css">
+</head>
+
+<body>
+    <header>
+        <h2 class="logo">MetroGear.TO</h2>
+        <ul class="navbar">       
+            <li>About</li>
+            <li class="active">Consignment</li>
+            <li>Sale</li>
+            <li>Shop</li>
+        </ul>
+    </header>
+    <div class="info">
+        <div class="header-info">
+            <h1 class="header-title">Consign with us!</h1>
+            <p class="header-details">Want to sell your streetwear but don't have the time? We can do it for you!</p>
+            
+            <p class="header-details"> Fill out the form below. Leave your name, 
+                email, details of the product(s) including <b>size, quantity, and quality,</b> and attach any relevant pictures optionally. We will contact you shortly!
+            </p>
+        </div>
+        <div class="consignment-div">
+            <form action="" id="consignment-form">
+                <input type="text" placeholder="Name" class="consignment-form-name" required>
+                <input type="text" placeholder="Email" class="consignment-form-email" required>
+                <br>
+                <textarea placeholder="Details" rows="10" cols="30" class="consignment-form-details" required></textarea>
+                <br>
+                <div class="consignment-form-file">
+                    <input type="file" id="actual-btn" hidden multiple/>
+                    <label for="actual-btn">Choose Files</label>
+                    <span id="file-chosen">No files chosen</span>
+                </div>
+                <br>
+                <button class="consignment-form-submit">Submit</button>
+                <br>
+                <p id="consignment-form-text"></p>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>Footer</p>
+    </footer>
+    <script src="../js/scripts.js"></script>
+</body>
+</html>
