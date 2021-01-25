@@ -43,7 +43,7 @@ header ul li a
 }
 
 .active {
-    background-color: rgb(250, 192, 192);
+    color: #eb512f;
 }
 
 .header-title {
