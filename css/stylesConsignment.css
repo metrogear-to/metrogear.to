@@ -1,31 +1,44 @@
 body {
     font-family: Helvetica;
 }
-
-.logo {
-    float: left;
-    margin-top: 0px;
-    display: inline;
-    padding-left: 10px;
-    padding-top: 5px;
+header
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 86.4%;
+	padding: 20px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
-
-.navbar {
-    display: inline;
-    list-style-type: none;
+header .logo
+{
+	position: relative;
+	max-width: 100px;
 }
-
-li {
-    float: right;
-    margin-right: 2.5%;
-    padding: 2px;
-    margin-top: 0.5%;
+header ul
+{
+	position: relative;
+	display: flex;
+}
+header ul li
+{
+	list-style: none;
+}
+header ul li a
+{
+	display: inline-block;
+	color: #333;
+	font-weight: 600;
+	margin-left: 40px;
+	text-decoration: none;
 }
 
 .info {
     margin-left: 20%;
     margin-right: 20%;
-    margin-top: 0%;
+    margin-top: 8%;
     width: 60%;
 }
 
