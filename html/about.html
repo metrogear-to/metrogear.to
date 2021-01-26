@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Metro Gear Toronto - About Us</title>
 	<link rel="stylesheet" href="../css/stylesAbout.css">
 </head>
@@ -10,11 +11,11 @@
 		<div class="circle"></div>
 		<header>
 			<a href="#"><img src="../img/logo/societythrift.jpg" class="logo"></a>
-			<ul>
+			<div class="toggle" onclick="toggleMenu();"></div>
+			<ul class="navigation">
 				<li><a href="#">Home</a></li>
 				<li><a href="#">Shop</a></li>
-				<li><a href="consignment.html">Consignment</a></li>
-				<li><a href="#">Slot Services</a></li>
+				<li><a href="#">Consignment</a></li>
 				<li><a href="#">Sale</a></li>
 				<li><a href="#">About Us</a></li>
 			</ul>
@@ -22,7 +23,7 @@
 		<div class="content">
 			<div class="textBox">
 				<h2>We Are<br>METRO GEAR <span>Toronto</span></h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+				<p>Formerly know as Society Thrift, we are a group of university students from the east end of Scarborough. Together our mission is to share our passion for streetwear and sneakers with you all!</p>
 				<a href="#">Contact Us!</a>
 			</div>
 			<div class="imgBox">
@@ -35,7 +36,7 @@
 			<li><img src="../img/about/unc6tn.png" onclick="imgSlider('../img/about/unc6.png');changeCircleColor('#4B9CD3')"></li>
 		</ul>
 		<ul class="sci">
-			<li><a href="#"><img src="../img/about/instagram.png"></a></li>
+			<li><a href="https://www.instagram.com/metrogear.to/"><img src="../img/about/instagram.png"></a></li>
 		</ul>
 	</section>
 
@@ -47,6 +48,13 @@
 		function changeCircleColor(color){
 			const circle = document.querySelector('.circle');
 			circle.style.background = color;
+		}
+
+		function toggleMenu(){
+			var menuToggle = document.querySelector('.toggle');
+			var navigation = document.querySelector('.navigation')
+			menuToggle.classList.toggle('active')
+			navigation.classList.toggle('active')
 		}
 	</script>
 </body>
