@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Metro Gear Toronto - About Us</title>
+	<link rel="stylesheet" href="../css/stylesAbout.css">
+</head>
+<body>
+	<section>
+		<div class="circle"></div>
+		<header>
+			<a href="#"><img src="../img/logo/societythrift.jpg" class="logo"></a>
+			<div class="toggle" onclick="toggleMenu();"></div>
+			<ul class="navigation">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Shop</a></li>
+				<li><a href="consignment.html">Consignment</a></li>
+				<li><a href="#">Slot Services</a></li>
+				<li><a href="#">Sale</a></li>
+				<li><a href="#">About Us</a></li>
+			</ul>
+		</header>
+		<div class="content">
+			<div class="textBox">
+				<h2>We Are<br>METRO GEAR <span>Toronto</span></h2>
+				<p>Formerly know as Society Thrift, we are a group of university students from the east end of Scarborough. Together our mission is to share our passion for streetwear and sneakers with you all!</p>
+				<a href="#">Contact Us!</a>
+			</div>
+			<div class="imgBox">
+				<img src="../img/about/bredtoe.png" class="metrogear">
+			</div>
+		</div>
+		<ul class="thumb">
+			<li><img src="../img/about/bredtoetn.png" onclick="imgSlider('../img/about/bredtoe.png');changeCircleColor('#bf9494')"></li>
+			<li><img src="../img/about/bred4tn.png" onclick="imgSlider('../img/about/bred4.png');changeCircleColor('#808080')"></li>
+			<li><img src="../img/about/unc6tn.png" onclick="imgSlider('../img/about/unc6.png');changeCircleColor('#4B9CD3')"></li>
+		</ul>
+		<ul class="sci">
+			<li><a href="https://www.instagram.com/metrogear.to/"><img src="../img/about/instagram.png"></a></li>
+		</ul>
+	</section>
+
+	<script type="text/javascript">
+		function imgSlider(anything){
+			document.querySelector('.metrogear').src = anything;
+		}
+
+		function changeCircleColor(color){
+			const circle = document.querySelector('.circle');
+			circle.style.background = color;
+		}
+
+		function toggleMenu(){
+			var menuToggle = document.querySelector('.toggle');
+			var navigation = document.querySelector('.navigation')
+			menuToggle.classList.toggle('active')
+			navigation.classList.toggle('active')
+		}
+	</script>
+</body>
+</html>
