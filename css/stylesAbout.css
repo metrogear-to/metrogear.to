@@ -1,14 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 
-{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: 'Poppins', sans-serif;
-}
 section
 {
-	position: relative;
 	width: 100%;
 	min-height: 100vh;
 	display: flex;
@@ -21,7 +14,8 @@ header
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
+	width: 86.4%;
+	padding: 20px 100px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -30,7 +24,7 @@ header .logo
 {
 	position: relative;
 	max-width: 100px;
-	padding: 20px 20px;
+
 }
 header ul
 {
@@ -43,7 +37,7 @@ header ul li
 }
 header ul li a
 {
-	font-family: Monaco;
+	font-family: Arial, Helvetica, sans-serif;
 	display: inline-block;
 	color: #333;
 	font-weight: 600;
@@ -52,7 +46,7 @@ header ul li a
 }
 .content
 {
-	font-family: Courier;
+	font-family: Arial, Helvetica, sans-serif;
 	position: relative;
 	width: 100%;
 	display: flex;
@@ -67,22 +61,23 @@ header ul li a
 }
 .content .textBox h2
 {
-	font-family: Monaco;
+	font-family: Arial, Helvetica, sans-serif;
 	color: #333;
-	font-size: 4em;
-	line-height: 1.4em;
+	font-size: 3.5em;
+	line-height: 1.2em;
 	font-weight: 500;
 }
 .content .textBox h2 span
 {
-	font-family: Impact;
+	font-family: Arial, Helvetica, sans-serif;
 	color: #8B0000;
-	font-size: 1.2em;
+	font-size: 1em;
 	font-weight: 900;
 }
 .content .textBox p
 {
 	content: #333;
+	line-height: 25px;
 }
 .content .textBox a
 {
@@ -201,7 +196,7 @@ header ul li a
 	}
 	header ul.navigation.active
 	{
-		font-family: Monaco;
+		font-family: Arial, Helvetica, sans-serif;
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -263,4 +258,15 @@ header ul li a
 		border-top-left-radius: 5px;
 		border-bottom-left-radius: 5px;
 	}
+}
+
+footer {
+	font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+    position: absolute;
+    right: 0;
+    bottom:0;
+    left:0;
+    text-align: center;
 }
