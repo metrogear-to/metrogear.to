@@ -48,7 +48,7 @@ header ul li a
 .welcome-img {
 	padding: 100px;
 	text-align: center; 
-	background-image: url("../img/homepage.jpg");
+	background-image: url("../img/homepage/homepage.jpg");
 	background-size: cover;
 	position: relative;
 	top: 100px; 
