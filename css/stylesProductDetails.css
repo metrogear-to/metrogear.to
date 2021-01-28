@@ -42,9 +42,21 @@ header ul li a
     width: 60%;
 }
 
+.header-brand {
+	font-size: 12px;
+	text-align: center;
+	color: rgb(145, 144, 144);
+}
+
 .header-title {
     font-size: 25px;
-    text-align: center;
+	text-align: center;
+}
+
+.header-info {
+	font-size: 12px;
+	text-align: center;
+	color: rgb(145, 144, 144);
 }
 
 .header-details {
@@ -71,14 +83,14 @@ ul {
 .product-image {
 	width: 30%;
 	position: absolute;
-	top: 25%;
+	top: 20%;
 	left: 15%;
 }
 
 .product-info {
 	width: 30%;
 	position: absolute;
-	top: 17%;
+	top: 20%;
 	right: 15%;
 }
 
@@ -118,7 +130,7 @@ ul {
 
 .product-sizing {
 	position: relative;
-	margin-top: 20%;
+	margin-top: 10%;
 }
 
 *[id^='size-element'] {
@@ -143,4 +155,5 @@ ul {
 	font-size: 16px;
 	text-align: center;
 	margin-top: 15%;
+
 }
