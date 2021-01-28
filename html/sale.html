@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Metro Gear Toronto - Sale</title>
+	<link rel="stylesheet" href="../css/sale/stylesSale.css">
+	<link rel="stylesheet" type="text/css" href="../css/sale/lightslider.css">
+	<script type="text/javascript" src="../js/sale/JQuery3.3.1.js"></script>
+	<script type="text/javascript" src="../js/sale/lightslider.js"></script>
+</head>
+<body>
+	<header>
+		<a href="#"><img src="../img/logo/societythrift.jpg" class="logo"></a>
+		<div class="toggle" onclick="toggleMenu();"></div>
+		<ul class="navigation">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Shop</a></li>
+			<li><a href="consignment.html">Consignment</a></li>
+			<li><a href="#">Slot Services</a></li>
+			<li><a href="sale.html">Sale</a></li>
+			<li><a href="about.html">About Us</a></li>
+		</ul>
+	</header>
+	<section>
+		<div class="heading">
+			<h2>FLASH SALE</h2>
+			<p>UP TO 50% OFF FOR A LIMITED TIME ONLY</p>
+		</div>
+		<div class="timer">
+			<p id="day"></p>
+			<h6>DAYS</h6>
+		</div>
+		<div class="timer">
+			<p id="hour"></p>
+			<h6>HOURS</h6>
+		</div>
+		<div class="timer">
+			<p id="minute"></p>
+			<h6>MINUTES</h6>
+		</div>
+		<div class="timer">
+			<p id="second"></p>
+			<h6>SECONDS</h6>
+		</div>
+	</section>
+	<div class="container">
+		<!-- slider -->
+		<ul id="autoWidth" class="cs-hidden">
+			<!-- 1 -->
+			<li class="item-a">
+				<div class="box">
+					<p class="productName">Jordan 1 Retro High Bred Toe</p>
+					<img src="../img/about/bredtoe.png" class="productPic">
+					<div class="desc">
+						<h2><del>WAS: $900</del><br><span>NOW: $600</span></h2>
+						<p>Size: 12 US MEN'S<br>Condition: 10/10 DEADSTOCK<br></p>	
+					</div>
+				</div>
+			</li>
+			<!-- 2 -->
+			<li class="item-a">
+				<div class="box">
+					<p class="productName">Jordan 4 Retro Bred</p>
+					<img src="../img/about/bred4.png" class="productPic">
+					<div class="desc">
+						<h2><del>WAS: $900</del><br><span>NOW: $600</span></h2>
+						<p>Size: 12 US MEN'S<br>Condition: 10/10 DEADSTOCK<br></p>	
+					</div>
+				</div>
+			</li>
+			<!-- 3 -->
+			<li class="item-a">
+				<div class="box">
+					<p class="productName">Jordan 6 Retro UNC</p>
+					<img src="../img/about/unc6.png" class="productPic">
+					<div class="desc">
+						<h2><del>WAS: $900</del><br><span>NOW: $600</span></h2>
+						<p>Size: 12 US MEN'S<br>Condition: 10/10 DEADSTOCK<br></p>	
+					</div>
+				</div>
+			</li>
+			<!-- 4 -->
+			<li class="item-a">
+				<div class="box">
+					<p class="productName">Jordan 1 Retro High Bred Toe</p>
+					<img src="../img/about/bredtoe.png" class="productPic">
+					<div class="desc">
+						<h2><del>WAS: $900</del><br><span>NOW: $600</span></h2>
+						<p>Size: 12 US MEN'S<br>Condition: 10/10 DEADSTOCK<br></p>	
+					</div>
+				</div>
+			</li>
+			<!-- 5 -->
+			<li class="item-a">
+				<div class="box">
+					<p class="productName">Jordan 4 Retro Bred</p>
+					<img src="../img/about/bred4.png" class="productPic">
+					<div class="desc">
+						<h2><del>WAS: $900</del><br><span>NOW: $600</span></h2>
+						<p>Size: 12 US MEN'S<br>Condition: 10/10 DEADSTOCK<br></p>	
+					</div>
+				</div>
+			</li>
+			<!-- 6 -->
+			<li class="item-a">
+				<div class="box">
+					<p class="productName">Jordan 6 Retro UNC</p>
+					<img src="../img/about/unc6.png" class="productPic">
+					<div class="desc">
+						<h2><del>WAS: $900</del><br><span>NOW: $600</span></h2>
+						<p>Size: 12 US MEN'S<br>Condition: 10/10 DEADSTOCK<br></p>	
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<script type="text/javascript">
+		function toggleMenu(){
+			var menuToggle = document.querySelector('.toggle');
+			var navigation = document.querySelector('.navigation')
+			menuToggle.classList.toggle('active')
+			navigation.classList.toggle('active')
+		}
+		var countDownDate = new Date("January 30, 2021 17:00:00").getTime()
+		var x = setInterval(function(){
+			var now = new Date().getTime();
+			var distance = countDownDate - now;
+
+			var days = Math.floor(distance/(1000*60*60*24));
+			var hours = Math.floor((distance%(1000*60*60*24))/(1000*60*60));
+			var minutes = Math.floor((distance%(1000*60*60))/(1000*60));
+			var seconds = Math.floor((distance%(1000*60))/(1000));
+
+			document.getElementById("day").innerHTML = days;
+			document.getElementById("hour").innerHTML = hours;
+			document.getElementById("minute").innerHTML = minutes;
+			document.getElementById("second").innerHTML = seconds;
+		});
+	</script>
+	<script src="../js/sale/sale.js" type="text/javascript"></script>
+</body>
+</html>
