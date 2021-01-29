@@ -53,48 +53,10 @@ const showPrice = (priceArray, email, size) => {
         contactInfo.textContent = ''
     } else {
         for(var i=0; i<priceArray.length; i++) {
-            priceDisplay.textContent = priceDisplay.textContent + '$' + priceArray[i] + (i+1 !== priceArray.length ? ', ' : '')
+            priceDisplay.textContent = priceDisplay.textContent + '$' + priceArray[i] + ' CAD' + (i+1 !== priceArray.length ? ', ' : '')
         }
         
         priceDisplay.style.color = 'black'
         contactInfo.textContent = 'Contact ' + email + ' for more details'
     }
 }
-// document.getElementById('size-select').addEventListener('change', function() {
-
-//     let availableProducts = 'Loading...'
-//     let price = ''
-//     let contactInfo = ''
-//     switch (this.value) {
-//         case 'Size 8: Deadstock':
-//             availableProducts = '1 left'
-//             price = '$800'
-//             contactInfo = 'alex.science@gmail.com'
-//             break
-//         case 'Size 10: 8/10 Replacement box':
-//             availableProducts = '1 left'
-//             price = '$550'
-//             contactInfo = 'alex.science@gmail.com'
-//             break
-//         case 'Size 10: Deadstock':
-//             availableProducts = '3 left'
-//             price = '$900'
-//             contactInfo = 'saihan@gmail.com'
-//             break
-//         case 'Size 12: 9/10':
-//             availableProducts = '2 left'
-//             price = '$750'
-//             contactInfo = 'alexg@gmail.com'
-//             break
-//         case 'Size 15: Deadstock':
-//             availableProducts = '1 left'
-//             price = '$600'
-//             contactInfo = 'alex.science@gmail.com'
-
-
-//     }
-//     availabilityText.textContent = this.value + ': ' + availableProducts
-//     priceDisplay.textContent = price
-//     contactText.textContent = 'Please contact ' + contactInfo + ' for inquiries!'
-
-//   });
