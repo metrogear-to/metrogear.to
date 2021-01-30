@@ -68,11 +68,19 @@ footer {
 
 .dev-list {
     list-style-type: none;
+    display: inline-block;
+}
+
+.profile-name:hover {
+    transform: translateY(-10px);
+}
+
+.socials-icons:hover {
+    transform: translateY(-2px);
 }
 
 ul li {
-    display: inline;
-
+    display: inline-block;
 }
 
 .profile-img {

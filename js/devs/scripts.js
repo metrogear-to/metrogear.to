@@ -40,7 +40,7 @@ const changeDev = (name) => {
             resume.href = '../img/devs/alexg/alexgResume.pdf'
             break;
         case 'arvin':
-            profilePicture.src = '../img/devs/araf/araf.jpeg'
+            profilePicture.src = '../img/devs/arvin/arvin.png'
             profileName.textContent = 'Arvin Muraghathasan'
             profileBlurb.textContent = 'Im a 2nd year university student in Civil Engineering at York University. I live in Toronto, Ontario and have a keen passion for sports, fashion, and technology'
             linkedin.href = 'https://www.linkedin.com/in/arvinmurugathasan/'
@@ -50,7 +50,7 @@ const changeDev = (name) => {
             resume.href = '../img/devs/alexg/alexgResume.pdf'
             break;
         case 'saihan':
-            profilePicture.src = '../img/devs/alexg/alexg.jpeg'
+            profilePicture.src = '../img/devs/saihan/saihan.png'
             profileName.textContent = 'Saihan Khondoker'
             profileBlurb.textContent = 'Im a 2nd year university student in Business Commerce at Ryerson University. I live in Toronto, Ontario and have a keen passion for sports, fashion, and technology'
             linkedin.href = 'https://www.linkedin.com/in/saihan-khondoker-7a5351193/'
