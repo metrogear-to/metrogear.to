@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 86.4%;
+	padding: 20px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+header .logo
+{
+	position: relative;
+	max-width: 100px;
+}
+header ul
+{
+	position: relative;
+	display: flex;
+}
+header ul li
+{
+	list-style: none;
+}
+header ul li a
+{
+	display: inline-block;
+	color: #333;
+	font-weight: 600;
+	margin-left: 40px;
+	text-decoration: none;
+}
+
+.info {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 7%;
+    width: 60%;
+}
+
+.header-title {
+    font-size: 40px;
+    text-align: center;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    position: absolute;
+    right: 0;
+    bottom:0;
+    left:0;
+    text-align: center;
+}
+
+.dev-div {
+    position: absolute;
+    bottom: 7%;
+    width: 86.4%;
+    left: 21.6%;
+
+}
+
+.dev-list {
+    list-style-type: none;
+}
+
+ul li {
+    display: inline;
+
+}
+
+.profile-img {
+    border-radius: 100%;
+    border: 3px solid black;
+}
+
+li img {
+    position: relative;
+    top: 0%;
+}
+
+.profile-name {
+    padding: 5px 15px 5px 15px;
+}
+
+.profile-info {
+    width: 86.4%;
+    position: relative;
+    top: 5%;
+}
+
+.profile-pic {
+    width: 35%;
+    position: absolute;
+    left: 20%;
+}
+
+.profile-text {
+    width: 45%;
+    position: absolute;
+    right: 0%;
+    height: 100%;
+    margin-top: 7.5%;
+    font-size: 20px;
+}
+
+#person-name-value {
+    font-size: 24px;
+    color: rgb(46, 126, 231);
+    font-weight: 800;
+}
+
+#person-picture {
+    border-radius: 100%;
+    border: 3px solid black;
+}
+
+#person-blurb {
+    margin-top: 2.5%;
+    line-height: 150%;
+}
+
+#person-socials {
+    margin: 2.5% 0;
+    padding: 0;
+}
+
+.socials-icons{
+    margin-left: 0;
+    padding: 10px 10px 0px 0px;
+}
