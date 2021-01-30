@@ -83,6 +83,7 @@ ul li {
 li img {
     position: relative;
     top: 0%;
+    cursor: pointer;
 }
 
 .profile-name {
@@ -119,6 +120,7 @@ li img {
 #person-picture {
     border-radius: 100%;
     border: 3px solid black;
+    cursor: pointer;
 }
 
 #person-blurb {
