@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Metro Gear Toronto - About Us</title>
+	<title>Society Streetwear Toronto - About Us</title>
 	<link rel="stylesheet" href="../css/stylesAbout.css">
 </head>
+
 <body>
 	<section>
 		<div class="circle"></div>
 		<header>
-			<a href="homepage.html" target="_blank"><img src="../img/logo/societythrift.jpg" class="logo"></a>
+			<a href="homepage.html" target="_blank"><img src="../img/logo/societystreetwear.png" class="logo"></a>
 			<div class="toggle" onclick="toggleMenu();"></div>
 			<ul class="navigation">
 				<li><a href="homepage.html">Home</a></li>
@@ -23,43 +25,35 @@
 		</header>
 		<div class="content">
 			<div class="textBox">
-				<h2>We Are<br>METRO GEAR <span>Toronto</span></h2>
-				<p>Formerly know as Society Thrift, we are a group of university students from the east end of Scarborough. Together our mission is to share our passion for streetwear and sneakers with you all!</p>
-				<a href="#">Contact Us!</a>
+				<h2>We Are<br><b>SOCIETY STREETWEAR </b><span id="title">TORONTO</span></h2>
+				<p id="text">Formerly know as Society Thrift, we are a group of university students from the east end of
+					Scarborough. Together, we want to share our passion for streetwear and sneakers with you all!</p>
+				<a href="#">Email Us</a>
+				<a href="https://www.instagram.com/societystreetwear.to/">DM Us On Instagram</a>
+				<a href="https://www.instagram.com/p/CBzMDw7lY-6/">Reviews / References</a>
 			</div>
 			<div class="imgBox">
-				<img src="../img/about/bredtoe.png" class="metrogear">
+				<img src="../img/about/main.png" class="metrogear">
 			</div>
 		</div>
 		<ul class="thumb">
-			<li><img src="../img/about/bredtoetn.png" onclick="imgSlider('../img/about/bredtoe.png');changeCircleColor('#bf9494')"></li>
-			<li><img src="../img/about/bred4tn.png" onclick="imgSlider('../img/about/bred4.png');changeCircleColor('#808080')"></li>
-			<li><img src="../img/about/unc6tn.png" onclick="imgSlider('../img/about/unc6.png');changeCircleColor('#4B9CD3')"></li>
-		</ul>
-		<ul class="sci">
-			<li><a href="https://www.instagram.com/societystreetwear.to/"><img src="../img/about/instagram.png"></a></li>
+			<li><img src="../img/about/maintn.png"
+					onclick="imgSlider('../img/about/main.png');changeColor('#50E3C2');changeText('main')"></li>
+			<li><img src="../img/about/shippingtn.png"
+					onclick="imgSlider('../img/about/shipping.png');changeColor('#E3B750');changeText('shipping')"></li>
+			<li><img src="../img/about/returnstn.png"
+					onclick="imgSlider('../img/about/returns.png');changeColor('#8850E3');changeText('returns')"></li>
+			<li><img src="../img/about/checkmarktn.png"
+					onclick="imgSlider('../img/about/checkmark.png');changeColor('#5070E3');changeText('authenticity')">
+			</li>
+			<li><img src="../img/about/paymenttn.png"
+					onclick="imgSlider('../img/about/payment.png');changeColor('#E39250');changeText('payment')"></li>
 		</ul>
 		<footer>
 			<p>Footer</p>
 		</footer>
 	</section>
-
-	<script type="text/javascript">
-		function imgSlider(anything){
-			document.querySelector('.metrogear').src = anything;
-		}
-
-		function changeCircleColor(color){
-			const circle = document.querySelector('.circle');
-			circle.style.background = color;
-		}
-
-		function toggleMenu(){
-			var menuToggle = document.querySelector('.toggle');
-			var navigation = document.querySelector('.navigation')
-			menuToggle.classList.toggle('active')
-			navigation.classList.toggle('active')
-		}
-	</script>
+	<script src="../js/about/scripts.js"></script>
 </body>
+
 </html>
