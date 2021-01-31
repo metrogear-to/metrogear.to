@@ -1,20 +1,25 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
+
 header
 {
-	position: absolute;
 	top: 0;
-	left: 0;
-	width: 86.4%;
-	padding: 20px 100px;
+    width: 100%;
+	padding: 0px;; 
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+    align-items: center;
 }
+
+.navigation {
+    right: 2.5%;
+}
+
 header .logo
 {
-	position: relative;
+    left: 2.5%;
+
     max-width: 100px;
 
 }
@@ -40,7 +45,7 @@ header ul li a
 .info {
     margin-left: 20%;
     margin-right: 20%;
-    margin-top: 8%;
+    margin-top: 0%;
     width: 60%;
 }
 
@@ -58,38 +63,40 @@ header ul li a
 #consignment-form {
     position: relative;
     border: none;
-    
 }
 
 .consignment-form-name {
-    width: 100%;
+    width: 99%;
     height: 30px;
     background-color: #f0f0f3e5;
     border: none;
     margin: 0px;
-    padding-left: 10px;
+    padding-left: 1%;
     margin-top: 1%;
+    margin-left: 0%;
     font-size: 16px;
 }
 
 .consignment-form-email {
-    width: 100%;
+    width: 99%;
     height: 30px;
     background-color: #f0f0f3e5;
     border: none;
-    padding-left: 10px;
+    padding-left: 1%;
     margin-top: 1%;
+    margin-left: 0%;
     font-size: 16px;
 }
 
 .consignment-form-details {
-    width: 100%;
+    width: 99%;
     background-color: #f0f0f3e5;
     border: none;
     margin-top: 1%;
+    margin-left: 0%;
     resize: none;
     font-family: Arial, Helvetica, sans-serif;
-    padding-left: 10px;
+    padding-left: 1%;
     font-size: 16px;
 }
 
@@ -100,10 +107,12 @@ header ul li a
 label {
     background-color: black;
     color: white;
+    height: 40px;
     padding: 0.5rem;
     font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
-    margin-top: 1%;
+    margin-top: 2%;
+    margin-left: 0%;
 }
   
 #file-chosen{
@@ -121,23 +130,12 @@ label {
     color: white;
     padding-left: 10px;
     font-size: 16px;
-    margin-top: 1%;
+    margin-top: 2%;
     float: right;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#consignment-form-text {
-    display:block;
-    width: 50%;
-    font-size: 16px;
-    margin-top: 1%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-footer {
+/* footer {
     background-color: black;
     color: white;
     position: absolute;
@@ -145,7 +143,7 @@ footer {
     bottom:0;
     left:0;
     text-align: center;
-}
+} */
 
 header ul.navigation.active
 {
@@ -161,4 +159,73 @@ header ul.navigation.active
     flex-direction: column;
     background: #fff;
     z-index: 10;
+} 
+
+@media screen and (max-width: 800px) {
+    .header-title {
+        font-size: 20px 
+    }
+    header .logo {
+        max-width: 50px;
+    }
+    header ul li a {
+        color: #333;
+        font-weight: 600;
+        margin-left: 5px;
+        font-size: 10px;
+        text-decoration: none;
+        padding-left: 10px;
+    }
+
+    .header-details {
+        font-size: 14px;
+    }
+
+    .consignment-form-submit {
+        width: 100%;
+        cursor: pointer;
+        border: none;
+        height: 30px;
+        background-color: black;
+        color: white;
+        font-size: 14px;
+        margin-top: 6%;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-right: 0%;
+    }
+
+    .consignment-form-file {
+        margin-top: 4%;
+    }
+
+    label {
+        background-color: black;
+        color: white;
+        padding: 0.5rem;
+        font-family: Arial, Helvetica, sans-serif;
+        cursor: pointer;
+        margin-top: 2%;
+        margin-left: 0%;
+        font-size: 14px;
+        height: 30px;
+    }
+
+    #file-chosen{
+        margin-left: 0.3rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+    }
+
+
+.consignment-form-name {
+    font-size: 14px;
+}
+
+.consignment-form-email {
+    font-size: 14px;
+}
+
+.consignment-form-details {
+    font-size: 14px;
+}
 }
