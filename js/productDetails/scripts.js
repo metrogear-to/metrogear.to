@@ -10,6 +10,8 @@ const imgThree = document.querySelector('#list-img-3')
 
 const priceDisplay = document.querySelector('#header-price')
 const contactInfo = document.querySelector('#contact-info')
+const emailButton = document.querySelector('#add-to-cart')
+const emailCreater = document.querySelector('#contact-email')
 
 document.getElementById('list-img-1').addEventListener('click', () => {
     document.getElementById('display-pic').src = '../img/productDetails/bredtoe.png'
@@ -51,12 +53,24 @@ const showPrice = (priceArray, email, size) => {
         priceDisplay.textContent = 'Out of Stock'
         priceDisplay.style.color = 'red'
         contactInfo.textContent = ''
+        emailButton.textContent = 'Out of Stock'
+        emailCreater.href = ''
     } else {
         for(var i=0; i<priceArray.length; i++) {
             priceDisplay.textContent = priceDisplay.textContent + '$' + priceArray[i] + ' CAD' + (i+1 !== priceArray.length ? ', ' : '')
         }
-        
         priceDisplay.style.color = 'black'
         contactInfo.textContent = 'Contact ' + email + ' for more details'
+        emailButton.textContent = 'Email ' + email
+        emailCreater.href = 'mailto:' + email + '?Subject=Jordan%201%20Bred%20Toe%20Size%20' + size
+    }
+}
+
+const checkSize = () => {
+    if(priceDisplay.textContent[0] === 'F') {
+        alert('Please choose a size!')
+    }
+    else if(priceDisplay.textContent === 'Out of Stock') {
+        alert('Product is currently out of stock. Check back soon!')
     }
 }

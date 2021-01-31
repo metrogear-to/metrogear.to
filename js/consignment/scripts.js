@@ -13,7 +13,7 @@ consignmentForm.addEventListener('submit', (e) => {
     console.log(consignmentName.value, consignmentEmail.value, consignmentDetails.value)
     document.getElementById("consignment-form").reset();
     fileChosen.textContent = 'No files chosen'
-    consignmentText.textContent = 'Thank you! Your submission has been received.'
+    alert('Thank you. Your submission has been received. You will be contacted shortly.')
 })
 
 
