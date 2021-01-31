@@ -8,8 +8,8 @@ const actualBtn = document.getElementById('actual-btn');
 const fileChosen = document.getElementById('file-chosen');
 
 consignmentForm.addEventListener('submit', (e) => {
+
     e.preventDefault()
-    consignmentText.textContent = ''
     console.log(consignmentName.value, consignmentEmail.value, consignmentDetails.value)
     document.getElementById("consignment-form").reset();
     fileChosen.textContent = 'No files chosen'
