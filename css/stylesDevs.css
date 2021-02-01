@@ -2,21 +2,27 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
 header
 {
-	position: absolute;
 	top: 0;
-	left: 0;
-	width: 86.4%;
-	padding: 20px 100px;
+    width: 100%;
+	padding: 0px;; 
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+    align-items: center;
 }
+
+.navigation {
+    right: 2.5%;
+}
+
 header .logo
 {
-	position: relative;
-	max-width: 100px;
+    left: 2.5%;
+
+    max-width: 100px;
+
 }
 header ul
 {
@@ -29,6 +35,7 @@ header ul li
 }
 header ul li a
 {
+    font-family: Arial, Helvetica, sans-serif;
 	display: inline-block;
 	color: #333;
 	font-weight: 600;
@@ -39,7 +46,7 @@ header ul li a
 .info {
     margin-left: 20%;
     margin-right: 20%;
-    margin-top: 7%;
+    margin-top: 0%;
     width: 60%;
 }
 
@@ -48,27 +55,21 @@ header ul li a
     text-align: center;
 }
 
-footer {
-    background-color: black;
-    color: white;
-    position: absolute;
-    right: 0;
-    bottom:0;
-    left:0;
-    text-align: center;
-}
-
 .dev-div {
-    position: absolute;
-    bottom: 7%;
-    width: 86.4%;
-    left: 21.6%;
+    margin-top: 28%;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
 
 }
 
 .dev-list {
     list-style-type: none;
-    display: inline-block;
+    /* display: block; */
+    margin-left: auto;
+    margin-right: auto;
+    width:fit-content;
+
 }
 
 .socials-icons:hover {
@@ -82,6 +83,7 @@ ul li {
 .profile-img {
     border-radius: 100%;
     border: 3px solid black;
+    width: 75px;
 }
 
 .profile-img:hover {
@@ -91,7 +93,7 @@ ul li {
 }
 
 li img {
-    position: relative;
+    /* position: relative; */
     top: 0%;
     cursor: pointer;
 }
@@ -101,7 +103,7 @@ li img {
 }
 
 .profile-info {
-    width: 86.4%;
+    width: 100%;
     position: relative;
     top: 5%;
 }
@@ -115,9 +117,9 @@ li img {
 .profile-text {
     width: 45%;
     position: absolute;
-    right: 0%;
+    right: 5%;
     height: 100%;
-    margin-top: 7.5%;
+    margin-top: 5%;
     font-size: 20px;
 }
 
@@ -131,6 +133,7 @@ li img {
     border-radius: 100%;
     border: 3px solid black;
     cursor: pointer;
+    width: 350px;
 }
 
 #person-blurb {
@@ -146,4 +149,89 @@ li img {
 .socials-icons{
     margin-left: 0;
     padding: 10px 10px 0px 0px;
+}
+
+.socials-img {
+    width: 25px;
+}
+
+@media screen and (max-width: 800px) {
+    .header-title {
+        font-size: 20px 
+    }
+    header .logo {
+        max-width: 50px;
+    }
+    header ul li a {
+        color: #333;
+        font-weight: 600;
+        margin-left: 5px;
+        font-size: 10px;
+        text-decoration: none;
+        padding-left: 10px;
+    }
+
+    .header-details {
+        font-size: 14px;
+    }
+
+    #person-picture {
+        width: 275px;
+        border: 1.5px solid black;
+    }
+    .profile-info {
+        width: 100%;
+        position: relative;
+        top: 5%;
+    }
+
+    /* .profile-pic {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    } */
+
+    .profile-text {
+        width: 70%;
+        position: absolute;
+        margin-top: 60%;
+        margin-left: 15%;
+        margin-right: 15%;
+        font-size: 14px;
+    }
+
+    #person-name-value {
+        font-size: 18px;
+    }
+
+    .socials-img {
+        width: 15px;
+    }
+
+    #person-socials {
+        margin: 1% 0;
+        padding: 0;
+    }
+
+    .dev-div {
+        margin-top: 95%;
+    }
+
+    .dev-list {
+        width:fit-content;
+        margin-left: -5%;
+    }
+
+
+    .profile-img {
+        border-radius: 100%;
+        border: 1.5px solid black;
+        width: 35px;
+    }
+
+    .profile-img:hover {
+        transform: translateY(-5px);
+        border: 1.5px solid rgb(46, 126, 231);
+        box-shadow: 0px 6px 2.5px rgb(177, 176, 176);
+    }
 }
