@@ -14,36 +14,27 @@
 	padding-bottom: 250px;
 	min-height: 100vh;
 }
+
 header
 {
-	position: absolute;
 	top: 0;
-	left: 0;
-	width: 86.4%;
-	padding: 20px 100px;
+    width: 100%;
+	padding: 0px;; 
 	display: flex;
 	justify-content: space-between;
-<<<<<<< Updated upstream
-	align-items: center;
-=======
     align-items: center;
 }
 
 .navigation
 {
     right: 2.5%;
->>>>>>> Stashed changes
 }
+
 header .logo
 {
-<<<<<<< Updated upstream
-	position: relative;
-	max-width: 100px;
-=======
     left: 2.5%;
     max-width: 100px;
 
->>>>>>> Stashed changes
 }
 header ul
 {
@@ -56,7 +47,7 @@ header ul li
 }
 header ul li a
 {
-	font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 	display: inline-block;
 	color: #333;
 	font-weight: 600;
@@ -265,11 +256,7 @@ header ul li a
 		border-bottom-left-radius: 5px;
 	}
 }
-<<<<<<< Updated upstream
-/* FOOTER START */
-=======
 /* FOOTER CSS */
->>>>>>> Stashed changes
 .footer
 {
 	font-family: Arial, Helvetica, sans-serif;
@@ -277,30 +264,18 @@ header ul li a
     color: #D3D3D3;
     position: absolute;
     bottom:0;
-<<<<<<< Updated upstream
-    height: 400px;
-=======
     height: 250px;
->>>>>>> Stashed changes
     width: 100%
 }
 .footer .footerContent
 {
 	display: flex;
 }
-<<<<<<< Updated upstream
-.footer .footerContent .footerSection
-=======
 .footer .footerContent .footerSectionAbout, .footer .footerContent .footerSection
->>>>>>> Stashed changes
 {
 	flex: 1;
 	padding-top: 20px;
 	padding-left: 50px;
-<<<<<<< Updated upstream
-}
-
-=======
 	font-family: Monaco;
 }
 .footer .footerContent .footerSectionAbout h2
@@ -361,7 +336,6 @@ header ul li a
 {
 	color: #D3D3D3;
 }
->>>>>>> Stashed changes
 .footer .footerBottom
 {
 	background: #343A40;
@@ -374,8 +348,4 @@ header ul li a
 	left: 0px;
 	padding-top: 20px;
 }
-<<<<<<< Updated upstream
-/* FOOTER END */
-=======
 /* FOOTER CSS */
->>>>>>> Stashed changes
