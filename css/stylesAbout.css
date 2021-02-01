@@ -3,7 +3,6 @@
 #page-container
 {
 	position: relative;
-	width: 100%;
 	min-height: 100vh;
 	display: flex;
 	justify-content: space-between;
@@ -12,7 +11,7 @@
 }
 #main-content
 {
-	padding-bottom: 400px;
+	padding-bottom: 250px;
 	min-height: 100vh;
 }
 header
@@ -24,12 +23,27 @@ header
 	padding: 20px 100px;
 	display: flex;
 	justify-content: space-between;
+<<<<<<< Updated upstream
 	align-items: center;
+=======
+    align-items: center;
+}
+
+.navigation
+{
+    right: 2.5%;
+>>>>>>> Stashed changes
 }
 header .logo
 {
+<<<<<<< Updated upstream
 	position: relative;
 	max-width: 100px;
+=======
+    left: 2.5%;
+    max-width: 100px;
+
+>>>>>>> Stashed changes
 }
 header ul
 {
@@ -61,7 +75,7 @@ header ul li a
 .content .textBox
 {
 	padding: 50px;
-	padding-top: 100px;
+	padding-top: 50px;
 	padding-bottom: 125px;
 	position: relative;
 	max-width: 700px;
@@ -115,7 +129,7 @@ header ul li a
 {
 	position: absolute;
 	left: 50%;
-	bottom: 400px;
+	bottom: 250px;
 	transform: translateX(-50%);
 	display: flex;
 }
@@ -251,7 +265,11 @@ header ul li a
 		border-bottom-left-radius: 5px;
 	}
 }
+<<<<<<< Updated upstream
 /* FOOTER START */
+=======
+/* FOOTER CSS */
+>>>>>>> Stashed changes
 .footer
 {
 	font-family: Arial, Helvetica, sans-serif;
@@ -259,20 +277,91 @@ header ul li a
     color: #D3D3D3;
     position: absolute;
     bottom:0;
+<<<<<<< Updated upstream
     height: 400px;
+=======
+    height: 250px;
+>>>>>>> Stashed changes
     width: 100%
 }
 .footer .footerContent
 {
 	display: flex;
 }
+<<<<<<< Updated upstream
 .footer .footerContent .footerSection
+=======
+.footer .footerContent .footerSectionAbout, .footer .footerContent .footerSection
+>>>>>>> Stashed changes
 {
 	flex: 1;
 	padding-top: 20px;
 	padding-left: 50px;
+<<<<<<< Updated upstream
 }
 
+=======
+	font-family: Monaco;
+}
+.footer .footerContent .footerSectionAbout h2
+{
+	color: white;
+	font-size: 1em;
+}
+.footer .footerContent .footerSectionAbout h2 span
+{
+	color: #50E3C2;
+}
+.footer .footerContent .footerSectionAbout p
+{
+	font-size: 0.75em;
+	font-family: Monaco;
+	margin-bottom: 20px;
+}
+.footer .footerContent .footerSection h2
+{
+	color: white;
+	font-size: 1em;
+	margin-left: 40px;
+}
+.footer .footerContent .footerSection ul
+{
+	display: block;
+}
+.footer .footerContent .footerSection ul li
+{
+	list-style: none;
+	list-style-position: outside;
+}
+.footer .footerContent .footerSection ul li a
+{
+	color: #D3D3D3;
+	text-decoration: none;
+	font-size: 0.8em;
+	margin-bottom: 8px;
+}
+.footer .footerContent .footerSection ul li a:hover
+{
+	color: white;
+	transition: all .25s;
+}
+.footer .footerContent .footerSection .contact span
+{
+	display: block;
+	font-size: 0.8em;
+	margin-bottom: 8px;
+	margin-left: 40px;
+}
+.footer .footerContent .footerSection .contact span:hover, .footer .footerContent .footerSectionAbout .contact span a:hover
+{
+	color: white;
+	transition: all .25s;
+}
+.footer .footerContent .footerSection .contact span a
+{
+	color: #D3D3D3;
+}
+>>>>>>> Stashed changes
 .footer .footerBottom
 {
 	background: #343A40;
@@ -285,4 +374,8 @@ header ul li a
 	left: 0px;
 	padding-top: 20px;
 }
+<<<<<<< Updated upstream
 /* FOOTER END */
+=======
+/* FOOTER CSS */
+>>>>>>> Stashed changes
