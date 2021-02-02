@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+    {{>headInfo}}
+    <link rel="stylesheet" href="/css/stylesProductDetails.css">
+</head>
+
+<body>
+    {{>header}}
+    <div class="info">
+        <div class="header-info">
+
+        </div>
+        <div class="product-div">
+            <div class="product-image">
+                <img id="display-pic" src="../img/productDetails/bredtoe.png" alt="">
+                <ul id="pictures-list">
+                    <li class="list-img"><img id="list-img-1" src="../img/productDetails/bredtoe.png" width="80px" height="60px" alt=""></li>
+                    <li class="list-img"><img id="list-img-2" src="../img/productDetails/behind.jpg" width="80px" height="60px" alt=""></li>
+                    <li class="list-img"><img id="list-img-3" src="../img/productDetails/side.jpg" width="80px" height="60px" alt=""></li>
+                </ul>
+            </div>
+            <div class="product-info">
+                <p class="header-brand">Air Jordan</p>
+                <h1 class="header-title">Jordan 1 "Bred Toe"</h1>
+                <p class="header-info">Style Number: 555088-610<br>Year Released: 02/24/2018<br>Colourway: Gym Red/Black-Summit White<br>Fit Alert: Item runs true to size. We suggest you order your normal size.</p>
+                <hr>
+                <h4 id="header-price">From $550</h4>
+                <div class="product-sizing">
+                    <ul classes="size-list">
+                        <li id="size-element-7" onclick="showPrice(['550 9/10', '600'], 'alex@gmail.com', 7)";>7.0</li>
+                        <li id="size-element-7.5" onclick="showPrice(['700'], 'alexhe@gmail.com', 7.5)";>7.5</li>
+                        <li id="size-element-8" onclick="showPrice(['800'], 'araf@gmail.com', 8)";>8.0</li>
+                        <li id="size-element-8.5" onclick="showPrice(['700'], 'araf@gmail.com', 8.5)";>8.5</li>
+                        <li id="size-element-9" onclick="showPrice(['600'], 'shehan@gmail.com', 9)";>9.0</li>
+                        <li id="size-element-9.5" onclick="showPrice(['1000'], 'araf@gmail.com', 9.5)";>9.5</li>
+                        <li id="size-element-10" onclick="showPrice(['900'], 'alex@gmail.com', 10)";>10.0</li>
+                        <li id="size-element-10.5" onclick="showPrice(['550'], 'saihan@gmail.com', 10.5)";>10.5</li>
+                        <li id="size-element-11" onclick="showPrice([], 'mugda@gmail.com', 11)";>11.0</li>
+                        <li id="size-element-11.5" onclick="showPrice([], 'alex@gmail.com', 11.5)";>11.5</li>
+                        <li id="size-element-12" onclick="showPrice(['600'], 'mugda@gmail.com', 12)";>12.0</li>
+                        <li id="size-element-13" onclick="showPrice(['650 Replacement box', '900'], 'saihan@gmail.com', 13)";>13.0</li>
+                    </ul>
+                    <p id="contact-info"></p>
+                    <a id="contact-email" href=""><button id="add-to-cart" onclick="checkSize()">Choose a size</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{>footer}}
+    <script src="../js/productDetails/scripts.js"></script>
+</body>
+</html>
