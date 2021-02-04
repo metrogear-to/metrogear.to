@@ -28,10 +28,3 @@ function changeText (name){
 			text.textContent = 'We currently accept payment in forms of cash (for local meetups only), Interac E-Transfer and PayPal.'
 	}
 }
-
-function toggleMenu(){
-	var menuToggle = document.querySelector('.toggle');
-	var navigation = document.querySelector('.navigation')
-	menuToggle.classList.toggle('active')
-	navigation.classList.toggle('active')
-}

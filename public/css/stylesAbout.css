@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 
+body
+{
+	margin: 0;
+}
 #page-container
 {
 	position: relative;
+	width: 100%;
 	min-height: 100vh;
 	display: flex;
 	justify-content: space-between;
@@ -17,9 +22,10 @@
 
 header
 {
-	top: 0;
+	top: 0px;
     width: 100%;
-	padding: 0px;; 
+	padding: 0px;
+	padding-top: 8px; 
 	display: flex;
 	justify-content: space-between;
     align-items: center;
@@ -27,18 +33,19 @@ header
 
 .navigation
 {
-    right: 2.5%;
+    right: 3.04%;
 }
 
 header .logo
 {
     left: 2.5%;
+    padding-left: 8%;
     max-width: 100px;
 
 }
 header ul
 {
-	position: relative;
+	position: absolute;
 	display: flex;
 }
 header ul li
@@ -66,10 +73,10 @@ header ul li a
 .content .textBox
 {
 	padding: 50px;
-	padding-top: 50px;
+	padding-top: 0px;
 	padding-bottom: 125px;
 	position: relative;
-	max-width: 700px;
+	max-width: 60%;
 }
 .content .textBox h2
 {
@@ -105,7 +112,6 @@ header ul li a
 }
 .content .imgBox
 {
-	width: 600px;
 	display: flex;
 	justify-content: flex-end;
 	padding-right: 90px;
@@ -119,9 +125,8 @@ header ul li a
 .thumb
 {
 	position: absolute;
-	left: 50%;
+	left: -30px;
 	bottom: 250px;
-	transform: translateX(-50%);
 	display: flex;
 }
 .thumb li
@@ -155,106 +160,6 @@ header ul li a
 	height: 100%;
 	background: #50E3C2;
 	clip-path: circle(600px at right 800px);
-}
-@media (max-width: 1000px)
-{
-	header
-	{
-		padding: 20px;
-	}
-	header .logo
-	{
-		max-width: 60px;
-	}
-	header ul
-	{
-		display: none;
-	}
-	.toggle
-	{
-		position: relative;
-		width: 30px;
-		height: 30px;
-		cursor: pointer;
-		background: url(../img/about/menu.png);
-		background-size: 30px;
-		background-position: center;
-		background-repeat: no-repeat;
-		filter: invert(1);
-		z-index: 11;
-	}
-	.toggle.active
-	{
-		position: fixed;
-		background: url(../img/about/close.png);
-		background-size: 25px;
-		background-position: center;
-		background-repeat: no-repeat;
-	}
-	header ul.navigation.active
-	{
-		font-family: Arial, Helvetica, sans-serif;
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-direction: column;
-		background: #fff;
-		z-index: 10;
-	}
-	header ul li a
-	{
-		font-size: 1.5em;
-		margin: 5px 0;
-	}
-	section
-	{
-		padding: 20px 20px 120px;
-	}
-	.content
-	{
-		flex-direction: column;
-		margin-top: 100px;
-	}
-	.content .textbox h2
-	{
-		font-size: 2.5em;
-		margin-bottom: 15px;
-	}
-	.content .textbox
-	{
-		max-width: 100%;
-	}
-	.content .imgBox
-	{
-		max-width: 100%;
-		justify-content: center;
-	}
-	.content .imgBox img
-	{
-		max-width: 400px;
-		padding-bottom: 100px;
-	}
-	.thumb li img
-	{
-		max-width: 80px;
-	}
-	.circle
-	{
-		clip-path: circle(500px at center bottom);
-	}
-	.sci
-	{
-		background: #bf9494;
-		right: 50px;
-		width: 50px;
-		border-top-left-radius: 5px;
-		border-bottom-left-radius: 5px;
-	}
 }
 /* FOOTER CSS */
 .footer
@@ -349,3 +254,93 @@ header ul li a
 	padding-top: 20px;
 }
 /* FOOTER CSS */
+@media screen and (max-width: 1140px)
+{
+	#main-content
+	{
+		padding-bottom: 200px;
+	}
+	.content .textBox h2
+	{
+		font-size: 2.65em;
+		line-height: 1.2em;
+		font-weight: 500;
+	}
+	.content .textBox a
+	{
+		padding: 8px 20px;
+		background: #E36D50;
+		color: #fff;
+		border-radius: 40px;
+		font-weight: 400;
+		font-size: 12px;
+		letter-spacing: 1px;
+		text-decoration: none;
+	}
+	.content .imgBox
+	{
+		width: 140px;
+		height: 140px;
+		margin-top: 275px;
+	}
+	.content .imgBox img
+	{
+		width: 140px;
+		height: 140px;
+	}
+	.circle
+	{
+		width: 100%;
+		height: 100%;
+		clip-path: circle(500px at right 800px);
+	}
+	.thumb
+	{
+		bottom: 200px;
+	}
+	.footer
+	{
+		height: 200px;
+	}
+	.footer .footerContent .footerSectionAbout, .footer .footerContent .footerSection
+	{
+		padding-top: 10px;
+	}
+	.footer .footerContent .footerSectionAbout p, .footer .footerContent .footerSection ul li a, .footer .footerContent .footerSection .contact span
+	{
+		font-size: 8px;
+	}
+	.footer .footerBottom
+	{
+		height: 30px;
+		padding-top: 15px;
+	}
+}
+@media screen and (max-width: 800px)
+{
+	 header .logo {
+        max-width: 50px;
+    }
+    header ul li a {
+        color: #333;
+        font-weight: 600;
+        margin-left: 5px;
+        font-size: 10px;
+        text-decoration: none;
+        padding-left: 10px;
+    }
+}
+@media screen and (max-width: 425px)
+{
+	 header .logo {
+        max-width: 40px;
+    }
+    header ul li a {
+        color: #333;
+        font-weight: 600;
+        margin-left: 5px;
+        font-size: 6.5px;
+        text-decoration: none;
+        padding-left: 10px;
+    }
+}
