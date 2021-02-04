@@ -305,4 +305,9 @@ ul {
 		top: 60%;
 		right: 10%;
 	}
+
+	.footer
+    {
+        bottom: -55%;
+    }
 }
