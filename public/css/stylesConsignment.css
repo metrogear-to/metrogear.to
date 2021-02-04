@@ -299,16 +299,20 @@ header ul.navigation.active
         font-size: 14px;
     }
 
+    .consignment-form-name {
+        font-size: 14px;
+    }
 
-.consignment-form-name {
-    font-size: 14px;
-}
+    .consignment-form-email {
+        font-size: 14px;
+    }
 
-.consignment-form-email {
-    font-size: 14px;
-}
+    .consignment-form-details {
+        font-size: 14px;
+    }
 
-.consignment-form-details {
-    font-size: 14px;
-}
+    .footer
+    {
+        bottom: -20%;
+    }
 }

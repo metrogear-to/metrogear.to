@@ -51,7 +51,7 @@ app.get('/help/*', (req, res) => {
 })
 
 app.get('*', (req, res) => {
-    res.send('page no exist big man')
+    res.send('404 Error')
 })
 
 app.listen(port, () => {
