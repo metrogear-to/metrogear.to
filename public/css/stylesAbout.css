@@ -98,7 +98,7 @@ header ul li a
 	content: #333;
 	line-height: 25px;
 }
-.content .textBox a
+.content .textBox .button a
 {
 	display: inline-block;
 	margin-top: 20px;
@@ -112,6 +112,7 @@ header ul li a
 }
 .content .imgBox
 {
+	width: 500px;
 	display: flex;
 	justify-content: flex-end;
 	padding-right: 90px;
@@ -254,7 +255,7 @@ header ul li a
 	padding-top: 20px;
 }
 /* FOOTER CSS */
-@media screen and (max-width: 1140px)
+@media screen and (max-width: 1025px)
 {
 	#main-content
 	{
@@ -266,16 +267,9 @@ header ul li a
 		line-height: 1.2em;
 		font-weight: 500;
 	}
-	.content .textBox a
+	.content .textBox .button a
 	{
-		padding: 8px 20px;
-		background: #E36D50;
-		color: #fff;
-		border-radius: 40px;
-		font-weight: 400;
 		font-size: 12px;
-		letter-spacing: 1px;
-		text-decoration: none;
 	}
 	.content .imgBox
 	{
@@ -310,6 +304,10 @@ header ul li a
 	{
 		font-size: 8px;
 	}
+	.footer .footerContent .footerSection ul
+	{
+		margin-top: 0px;
+	}
 	.footer .footerBottom
 	{
 		height: 30px;
@@ -318,29 +316,164 @@ header ul li a
 }
 @media screen and (max-width: 800px)
 {
-	 header .logo {
+	#main-content
+	{
+		padding-bottom: 300px;
+	}
+	header .logo
+	{
         max-width: 50px;
     }
-    header ul li a {
-        color: #333;
+    header ul li a
+    {
         font-weight: 600;
         margin-left: 5px;
         font-size: 10px;
-        text-decoration: none;
         padding-left: 10px;
     }
+    .content
+    {
+    	flex-direction: column;
+    }
+    .content .textBox
+	{
+		padding: 50px;
+		padding-top: 0px;
+		position: relative;
+		max-width: 90%;
+		padding-bottom: 0px;
+	}
+	.content .textBox p
+	{
+		font-size: 13.5px;
+	}	
+	.content .textBox .button a
+	{
+		padding: 8px 10px;
+		font-size: 8.25px;
+	}
+	.content .imgBox
+	{
+		width: 100px;
+		height: 100px;
+		margin-top: 12px;
+		margin-left: 100px;
+		justify-content: center;
+	}
+	.content .imgBox img
+	{
+		width: 100px;
+		height: 100px;
+	}
+	.circle
+	{
+		clip-path: circle(470px at right 700px);
+	}
+	.thumb
+	{
+		bottom: 300px;
+		left: 0px;
+		display: block;
+	}
+	.thumb li
+	{
+		margin: 2px;
+	}
+	.thumb li figure
+	{
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+	.thumb li img
+	{
+		max-width: 20px;
+	}
+	.thumb li figcaption
+	{
+		font-size: 8.5px;
+	}
+	.footer
+	{
+		height: 300px;
+	}
+	.footer .footerContent
+	{
+		height: auto;
+		flex-direction: column;
+	}
+	.footer .footerContent .footerSection
+	{
+		padding-left: 10px;
+		padding-top: 0px;
+	}
+	.footer .footerContent .footerSectionAbout h2, .footer .footerContent .footerSection h2
+	{
+		font-size: 12px;
+		margin-bottom: 0px;
+	}
+	.footer .footerContent .footerSection .contact
+	{
+		margin-top: 10px;
+	}
+	.footer .footerBottom
+	{
+		height: 20px;
+		padding-top: 10px;
+		font-size: 8px;
+	}
 }
 @media screen and (max-width: 425px)
 {
-	 header .logo {
+	header .logo
+	{
         max-width: 40px;
     }
-    header ul li a {
-        color: #333;
-        font-weight: 600;
-        margin-left: 5px;
+    header ul li a
+    {
         font-size: 6.5px;
-        text-decoration: none;
-        padding-left: 10px;
     }
+    .content .textBox h2
+    {
+    	font-size: 35px;
+    }
+    .content .textBox p
+    {
+    	font-size: 11px;
+    	margin-bottom: 0px;
+    }
+    .content .textBox .button a
+    {
+    	padding: 6px 8px;
+		font-size: 8.5px;
+    }
+    .circle
+	{
+		clip-path: circle(400px at right 800px);
+	}
+	.content .imgBox
+    {
+    	display: none;
+    }
+	.thumb
+	{
+		left: 0px;
+		display: flex;
+	}
+	.thumb li
+	{
+		margin: 2px;
+	}
+	.thumb li figure
+	{
+		margin-left: 7px;
+		margin-right: 7px;
+	}
+	.thumb li img
+	{
+		max-width: 20px;
+	}
+	.thumb li figcaption
+	{
+		font-size: 8px;
+	}
 }
