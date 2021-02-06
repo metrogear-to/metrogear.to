@@ -15,7 +15,7 @@ run npm install path
 
 run npm install hbs
 
-run node arc/app.js
+run node src/app.js
 
 terminal should say 'server is up on port 3002!
 

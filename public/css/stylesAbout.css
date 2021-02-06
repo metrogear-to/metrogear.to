@@ -477,3 +477,111 @@ header ul li a
 		font-size: 8px;
 	}
 }
+/* iPhone 6, 6S, 7, 8 */
+@media only screen
+	and (min-device-width: 375px)
+	and (max-device-width: 667px)
+	and (-webkit-min-device-pixel-ratio: 2)
+{
+	header ul li a
+    {
+        font-size: 8.5px;
+    }
+	.content .imgBox
+	{
+		display: flex;
+		margin-top: -10px;
+		padding-right: 0px;
+		padding-left: 90px;
+	}
+	.circle
+	{
+		clip-path: circle(430px at right 800px);
+	}
+	.thumb li
+	{
+		margin: 10px;
+	}
+	.thumb li img
+	{
+		max-width: 25px;
+	}
+	.thumb li figcaption
+	{
+		font-size: 8.5px;
+	}
+}
+/* iPhone 6/7/8 Plus */
+@media only screen
+	and (min-device-width: 414px)
+	and (max-device-width: 736px)
+	and (-webkit-min-device-pixel-ratio: 3)
+{
+	header ul li a
+    {
+        font-size: 9px;
+    }
+	.content .imgBox
+	{
+		display: flex;
+		padding-right: 0px;
+		padding-left: 90px;
+		padding-top: 75px;
+		width: 135px;
+		height: 135px;
+	}
+	.content .imgBox img
+	{
+		width: 135px;
+		height: 135px;
+	}
+	.thumb li
+	{
+		margin: 12px;
+	}
+	.thumb li img
+	{
+		max-width: 30px;
+	}
+	.thumb li figcaption
+	{
+		font-size: 9px;
+	}
+}
+/* iPhone X */
+@media only screen
+	and (min-device-width: 375px)
+	and (max-device-width: 812px)
+	and (-webkit-min-device-pixel-ratio: 3)
+{
+	header ul li a
+    {
+        font-size: 9px;
+    }
+	.content .imgBox
+	{
+		display: flex;
+		padding-right: 80px;
+		padding-left: 0px;
+		padding-top: 75px;
+		width: 135px;
+		height: 135px;
+	}
+	.content .imgBox img
+	{
+		width: 135px;
+		height: 135px;
+	}
+	.thumb li
+	{
+		margin: 8px;
+	}
+	.thumb li img
+	{
+		max-width: 30px;
+	}
+	.thumb li figcaption
+	{
+		font-size: 9px;
+	}
+}
