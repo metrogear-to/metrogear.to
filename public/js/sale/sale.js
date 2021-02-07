@@ -8,12 +8,6 @@
     });  
   });
 
- function toggleMenu(){
-			var menuToggle = document.querySelector('.toggle');
-			var navigation = document.querySelector('.navigation')
-			menuToggle.classList.toggle('active')
-			navigation.classList.toggle('active')
-		}
 var countDownDate = new Date("February 25, 2021 17:00:00").getTime()
 var x = setInterval(function(){
 	var now = new Date().getTime();
